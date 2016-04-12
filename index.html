@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <link href="css/blues.min.css" rel="stylesheet" />
+        <link href="css/jquery.mobile.icons.min.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+        <title>Skabelon</title>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+<body>
+
+<div data-role="page" id="About">
+    <div data-role="header" data-position="fixed" class="header">
+        <h1>Om os</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#About" data-icon="home" class="ui-btn-active ui-state-persist MenuLink">Om os</a></li>
+                <li><a href="#Products" data-icon="shop" class="MenuLink">Produkter</a></li>
+                <li><a href="#Contact" data-icon="info" class="MenuLink">Kontakt</a></li>
+                <li><a href="#Staff" data-icon="user" class="MenuLink">Info</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        Om os indhold kommer
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer">
+        <p class="footerText">hovedgaden 21 8540 Århus</p>
+    </div>
+</div>
+
+<div data-role="page" id="Products">
+    <div data-role="header" data-position="fixed" class="header">
+        <h1>Produkter</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#About" data-icon="home" class="MenuLink">Om os</a></li>
+                <li><a href="#Products" data-icon="shop" class="ui-btn-active ui-state-persist MenuLink">Produkter</a></li>
+                <li><a href="#Contact" data-icon="info" class="MenuLink">Kontakt</a></li>
+                <li><a href="#Staff" data-icon="user" class="MenuLink">Info</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        Produkter/service ydelser indhold kommer
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer">
+        <p class="footerText">hovedgaden 21 8540 Århus</p>
+    </div>
+</div>
+
+<div data-role="page" id="Contact">
+    <div data-role="header" data-position="fixed" class="header">
+        <h1>Kontakt</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#About" data-icon="home" class="MenuLink">Om os</a></li>
+                <li><a href="#Products" data-icon="shop" class="MenuLink">Produkter</a></li>
+                <li><a href="#Contact" data-icon="info" class="ui-btn-active ui-state-persist MenuLink">Kontakt</a></li>
+                <li><a href="#Staff" data-icon="user" class="MenuLink">Info</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+
+        <h1>Two-space</h1>
+        <table class="ContactInfoTable">
+            <tr>
+                <td>Adresse:</td>
+                <td>M.P. Bruuns Gade 25</td>
+            </tr>
+            <tr>
+                <td>By:</td>
+                <td>
+                    8000 Aarhus C
+                </td>
+            </tr>
+            <tr>
+                <td>Tlf:</td>
+                <td>
+                    +45 20452312
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="AddContactBtn">Tilføj til kontakt bogen</button>
+                </td>
+            </tr>
+        </table>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDulm98Y7a9k2ffx9BT669suJtxPgxWtgg&&language=da-DK" type="text/javascript"></script>
+        <script src="js/Contact.js"></script>
+        <div id="map-canvas"></div>
+        <div id="directionsPanel"></div>
+        
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer">
+        <p class="footerText">hovedgaden 21 8540 Århus</p>
+    </div>
+</div>
+
+<div data-role="page" id="Staff">
+    <div data-role="header" data-position="fixed" class="header">
+        <h1>Info</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#About" data-icon="home" class="MenuLink">Om os</a></li>
+                <li><a href="#Products" data-icon="shop" class="MenuLink">Produkter</a></li>
+                <li><a href="#Contact" data-icon="info" class="MenuLink">Kontakt</a></li>
+                <li><a href="#Staff" data-icon="user" class="ui-btn-active ui-state-persist MenuLink">Info</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <h1>Medarbejdere</h1>
+        <div class="ui-grid-c">
+            <div class="ui-block-a">
+                <p class="MedarbejderText">Filip</p>
+                <p class="MedarbejderText">Gøttler</p>
+                <img class="MedarbejderImg" src="img/filip.jpg"/>
+            </div>
+            <div class="ui-block-b">
+                <p class="MedarbejderText">Jimmy</p>
+                <p class="MedarbejderText">Mathiesen</p>
+                <img class="MedarbejderImg" src="img/Jimmy.jpg"/>
+            </div>
+            <div class="ui-block-c">
+                <p class="MedarbejderText">Lucas</p>
+                <p class="MedarbejderText">Hansen</p>
+                <img class="MedarbejderImg" src="img/lucas.jpg"/>
+            </div>
+            <div class="ui-block-d">
+                <p class="MedarbejderText">Søren</p>
+                <p class="MedarbejderText">Jensen</p>
+                <img class="MedarbejderImg" src="img/søren.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer">
+        <p class="footerText">hovedgaden 21 8540 Århus</p>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="cordova.js"></script>
+   
+</body>
+</html>
