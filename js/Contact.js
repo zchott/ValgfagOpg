@@ -1,6 +1,7 @@
 ﻿var options;
 window.onload = function () {
-    document.addEventListener('deviceready',init,false);
+     document.addEventListener('deviceready',init,false);
+	
 };
 function init() {
     document.getElementById("AddContactBtn").addEventListener("click",AddContact);
