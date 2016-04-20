@@ -80,6 +80,18 @@
 .logoBox {
     padding: 10px;
 }
+.logoBox img{
+	height:60px;
+}
 ul li {
     border-top: 1px solid grey !important;
+}
+.FloatLeft{
+	float:left;
+}
+.FloatRight{
+	float:right;
+}
+.FloatClear{
+	clear:both;
 }
