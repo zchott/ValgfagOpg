@@ -1,17 +1,33 @@
 ﻿var options;
+var mapEnabled = 0;
 window.onload = function () {
      document.addEventListener('deviceready',init,false);
 	
 };
 function init() {
-    document.getElementById("AddContactBtn").addEventListener("click",AddContact);
-    options = {
-        maximumAge: 3000,
-        timeout: 5000,
-        enableHighAccuracy: true
-    };
-    document.getElementById("directionsPanel").innerHTML = "";
-    navigator.geolocation.getCurrentPosition(success,failure,options);
+    document.getElementById("AddContactBtn").addEventListener("click", AddContact);
+    document.getElementById("ShowRoute").addEventListener("click",GoogleMapsInit);
+    
+    
+}
+function GoogleMapsInit() {
+    if (mapEnabled === 0) {
+        options = {
+            maximumAge: 10000,
+            timeout: 10000,
+            enableHighAccuracy: true
+        };
+        document.getElementById("map-canvas").style.display = "block";
+        document.getElementById("directionsPanel").innerHTML = "";
+        navigator.geolocation.getCurrentPosition(success, failure, options);
+        mapEnabled = 1;
+    } else {
+        document.getElementById("map-canvas").innerHTML = "";
+        document.getElementById("directionsPanel").innerHTML = "";
+        document.getElementById("map-canvas").style.display = "none";
+        mapEnabled = 0;
+    }
+    
 }
 function success(position) {
     var lat = position.coords.latitude;
@@ -68,7 +84,8 @@ function AddContact() {
     phoneNums[0] = new ContactField('home', phoneNumber, true);
     newContact.phoneNumbers = phoneNums;
     newContact.save();
-    document.getElementById("AddContactBtn").removeEventListener("click",AddContact);
+    document.getElementById("AddContactBtn").removeEventListener("click", AddContact);
+    alert('Kontakt blev tilføjet til kontakt bogen');
 
 
 }

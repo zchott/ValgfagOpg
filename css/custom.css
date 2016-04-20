@@ -10,20 +10,23 @@
 	height:250px;
 	width:60%;
 }
+#AddContactBtn {
+    cursor: pointer;
+}
 .ContactInfoTable {
     width: 300px;
-    border: 1px solid #C4D7ED;
+    
     margin-bottom: 20px;
 }
 .ContactInfoTable tr td:first-child {
     width: 100px;
 }
-/*.header {
-    background-color: #ABC8E2!important;
+.header {
+    border-bottom: 1px solid black;
 }
 .footer {
     background-color: #C4D7ED !important;
-}*/
+}
 .MedarbejderImg {
     border: 1px solid #C4D7ED;
 }
@@ -32,4 +35,51 @@
     margin-bottom: 0;
     font-size: 11px;
     font-weight: bold;
+}
+
+/*game css*/
+.MatchButtons {
+    width: 52px!important;
+    height: 52px!important;
+    margin-bottom: 0!important;
+    display: inline-block!important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+
+  
+
+    
+}
+.flipped {
+    -webkit-perspective: 800;
+    perspective: 800;
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.flippedBack {
+    -webkit-perspective: 800;
+    perspective: 800;
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.AddHighScoreNameTD {
+    padding: 5px;
+    vertical-align: top;
+}
+.logoBox {
+    padding: 10px;
+}
+ul li {
+    border-top: 1px solid grey !important;
 }
